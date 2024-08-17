@@ -21,7 +21,8 @@ class Utils {
         if (input == null){
             throw IllegalArgumentException("Input String is Required")
         }
-        var chars = input.toCharArray()
+
+        val chars = input.toCharArray()
         var i =0
         var j = input.length-1
 
