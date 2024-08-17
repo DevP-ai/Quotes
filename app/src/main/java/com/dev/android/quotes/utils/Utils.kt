@@ -16,4 +16,22 @@ class Utils {
              "Valid"
          }
     }
+
+    fun reverseString(input:String?):String{
+        if (input == null){
+            throw IllegalArgumentException("Input String is Required")
+        }
+        var chars = input.toCharArray()
+        var i =0
+        var j = input.length-1
+
+        while (i<j){
+            val temp = chars[i]
+            chars[i] = chars[j]
+            chars[j] = temp
+            i++
+            j--
+        }
+        return chars.joinToString("")
+    }
 }
