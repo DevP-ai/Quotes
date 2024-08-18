@@ -1,5 +1,10 @@
 package com.dev.android.quotes.utils
 
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+
 class Utils {
 
     fun validPassword(password:String) = when{
